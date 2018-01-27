@@ -6,12 +6,6 @@ import time
 is_prod = os.environ.get('IS_HEROKU', None)
 
 
-consumer_key = data['twitter_consumer_key']
-consumer_secret = data['twitter_consumer_secret']
-access_token = data['twitter_access_token']
-access_token_secret = data['twitter_access_token_secret']
-
-
 if is_prod:
     #here goes all your heroku config
     consumer_key = os.environ.get('twitter_consumer_key', None)
